@@ -10,6 +10,8 @@ public class sorter {
         str+="Die bisherige Eingabe ist: " + al.toString(); 
         al.add(JOptionPane.showInputDialog(null, str).toLowerCase());
         }
+        if(al.contains("Stop"))al.remove("Stop");
+        else al.remove("stop");
         Collections.sort(al);
         String str = new String();
         for(int i = 0; i<al.size(); i++){
